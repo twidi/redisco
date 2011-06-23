@@ -55,8 +55,13 @@ class Attribute(object):
                 self.__set__(instance, val)
                 return val
             else:
-                self.__set__(instance, self.default)
-                return self.default
+                val = self.default
+                if callable(val):
+                    val = val()
+                    if not type(val) in (time, datetime, int, str, float):
+                        val = str(val)
+                self.__set__(instance, val)
+                return val
 
 
     def __set__(self, instance, value):
