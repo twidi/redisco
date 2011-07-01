@@ -189,7 +189,7 @@ class DateTimeField(Attribute):
 
     def __init__(self, auto_now=False, auto_now_add=False, **kwargs):
         if (auto_now or auto_now_add) and kwargs.has_key('default') == False:
-            kwargs['default'] = datetime.now()
+            kwargs['default'] = datetime.now
 
         super(DateTimeField, self).__init__(**kwargs)
         self.auto_now = auto_now
