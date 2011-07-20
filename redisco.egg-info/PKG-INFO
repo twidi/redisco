@@ -1,6 +1,6 @@
 Metadata-Version: 1.0
 Name: redisco
-Version: 0.1.3
+Version: 0.1.3-datefix
 Summary: Python Containers and Simple Models for Redis
 Home-page: http://github.com/iamteem/redisco
 Author: Tim Medina
