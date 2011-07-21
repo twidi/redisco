@@ -20,6 +20,7 @@ setup(name='redisco',
       author='Tim Medina',
       author_email='iamteem@gmail.com',
       maintainer='Tim Medina',
+      install_requires=['redis >=2.4.5']
       maintainer_email='iamteem@gmail.com',
       keywords=['Redis', 'model', 'container'],
       license='MIT',
