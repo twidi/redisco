@@ -49,7 +49,9 @@ class ModelSet(Set):
             yield self._get_item_with_id(id)
 
     def __len__(self):
-        return len(self._set)
+        if self._set:
+            return len(self._set)
+        return 0
 
     def __contains__(self, val):
         return val.id in self._set
